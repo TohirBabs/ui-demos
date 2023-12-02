@@ -1,29 +1,218 @@
 const PortfolioCard = () => {
   const FindFriendsCard = () => {
     return (
-      <div className="bg-white rounded-xl p-4">
-        <div className="flex justify-between items-center w-[350px]">
-          <h2 className="font-bold text-[#222222]">Find friends</h2>
-          <p>5 players</p>
-        </div>
-        <div className="">
-          <div className=""></div>
-          <button className="p-2 bg-[#f5f5f5] w-max rounded-full px-3 pr-2">
-            find friends
-            <svg
-              width="168"
-              height="167"
-              viewBox="0 0 168 167"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              className="inline align-middle ml-2 w-5 h-5"
-            >
-              <path
-                d="M90.97 48.9167H77.1036V76.6495H49.3708V90.5159H77.1036V118.249H90.97V90.5159H118.703V76.6495H90.97V48.9167ZM84.0368 14.2507C45.7656 14.2507 14.7048 45.3115 14.7048 83.5827C14.7048 121.854 45.7656 152.915 84.0368 152.915C122.308 152.915 153.369 121.854 153.369 83.5827C153.369 45.3115 122.308 14.2507 84.0368 14.2507ZM84.0368 139.048C53.4614 139.048 28.5712 114.158 28.5712 83.5827C28.5712 53.0073 53.4614 28.1171 84.0368 28.1171C114.612 28.1171 139.502 53.0073 139.502 83.5827C139.502 114.158 114.612 139.048 84.0368 139.048Z"
-                fill="#6D6D6D"
+      <div className="bg-white rounded-xl p-4 text-xs w-[300px] relative overflow-hidden">
+        <div className="flex flex-col gap-3">
+          <div className="flex justify-between items-center ">
+            <h2 className="font-bold  text-[#222222]">Find friends</h2>
+            <p>5 players</p>
+          </div>
+          <div className="flex justify-between ">
+            <div className="flex relative flex-1">
+              <img
+                src="/avatar.png"
+                alt=""
+                className="w-8 h-8 bg-[#f5f5f5] absolute rounded-full"
               />
-            </svg>
-          </button>
+              <img
+                src="/avatar.png"
+                alt=""
+                className="w-8 h-8 bg-[#f5f5f5] absolute left-5 rounded-full"
+              />
+              <img
+                src="/avatar.png"
+                alt=""
+                className="w-8 h-8 bg-[#f5f5f5] absolute left-10 rounded-full"
+              />
+              <div
+                alt=""
+                className="w-8 h-8 bg-[#f5f5f5] absolute left-[3.75rem] rounded-full flex items-center justify-center"
+              >
+                +2
+              </div>
+            </div>
+            <button className="p-1 bg-[#f5f5f5] w-max rounded-full px-2 pr-1">
+              find friends
+              <svg
+                width="168"
+                height="167"
+                viewBox="0 0 168 167"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                className="inline align-middle ml-2 w-5 h-5"
+              >
+                <path
+                  d="M90.97 48.9167H77.1036V76.6495H49.3708V90.5159H77.1036V118.249H90.97V90.5159H118.703V76.6495H90.97V48.9167ZM84.0368 14.2507C45.7656 14.2507 14.7048 45.3115 14.7048 83.5827C14.7048 121.854 45.7656 152.915 84.0368 152.915C122.308 152.915 153.369 121.854 153.369 83.5827C153.369 45.3115 122.308 14.2507 84.0368 14.2507ZM84.0368 139.048C53.4614 139.048 28.5712 114.158 28.5712 83.5827C28.5712 53.0073 53.4614 28.1171 84.0368 28.1171C114.612 28.1171 139.502 53.0073 139.502 83.5827C139.502 114.158 114.612 139.048 84.0368 139.048Z"
+                  fill="#6D6D6D"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div className="flex flex-col gap-3 pt-4">
+          <div className="flex justify-between items-center">
+            <h2 className="font-bold  text-[#222222]">Other members</h2>
+            <p>8 players</p>
+          </div>
+          <div className="flex flex-col gap-2">
+            <div className="flex justify-between items-center border-b border-[#f5f5f5] py-1">
+              <div className="flex gap-2 items-center">
+                <img
+                  src="/avatar.png"
+                  alt=""
+                  className="w-8 h-8 bg-[#f5f5f5] rounded-full"
+                />
+                <div className="">
+                  <p className="text-[#222222]">Ali Corak</p>
+                  <p>@ali</p>
+                </div>
+              </div>
+              <button>
+                <svg
+                  width="167"
+                  height="167"
+                  viewBox="0 0 167 167"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="w-6 h-6 rounded-full  p-1 bg-[#f5f5f5]"
+                >
+                  <path
+                    d="M124.798 90.1316H90.1316V124.798C90.1316 128.611 87.0117 131.731 83.1984 131.731C79.3852 131.731 76.2652 128.611 76.2652 124.798V90.1316H41.5992C37.786 90.1316 34.666 87.0117 34.666 83.1984C34.666 79.3852 37.786 76.2652 41.5992 76.2652H76.2652V41.5992C76.2652 37.786 79.3852 34.666 83.1984 34.666C87.0117 34.666 90.1316 37.786 90.1316 41.5992V76.2652H124.798C128.611 76.2652 131.731 79.3852 131.731 83.1984C131.731 87.0117 128.611 90.1316 124.798 90.1316Z"
+                    fill="black"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div className="flex justify-between items-center border-b border-[#f5f5f5] py-1">
+              <div className="flex gap-2 items-center">
+                <img
+                  src="/avatar.png"
+                  alt=""
+                  className="w-8 h-8 bg-[#f5f5f5] rounded-full"
+                />
+                <div className="">
+                  <p className="text-[#222222]">Sarah Thompson</p>
+                  <p>@sarah</p>
+                </div>
+              </div>
+              <button>
+                <svg
+                  width="167"
+                  height="167"
+                  viewBox="0 0 167 167"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="w-6 h-6 rounded-full  p-1 bg-[#222222]"
+                >
+                  <path
+                    d="M63.2372 112.494L39.179 88.4356C36.4751 85.7316 32.1072 85.7316 29.4032 88.4356C26.6993 91.1395 26.6993 95.5075 29.4032 98.2114L58.384 127.192C61.0879 129.896 65.4558 129.896 68.1598 127.192L141.513 53.8389C144.217 51.135 144.217 46.7671 141.513 44.0631C138.809 41.3592 134.441 41.3592 131.737 44.0631L63.2372 112.494Z"
+                    fill="white"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div className="flex justify-between items-center border-b border-[#f5f5f5] py-1">
+              <div className="flex gap-2 items-center">
+                <img
+                  src="/avatar.png"
+                  alt=""
+                  className="w-8 h-8 bg-[#f5f5f5] rounded-full"
+                />
+                <div className="">
+                  <p className="text-[#222222]">Racheal Lee</p>
+                  <p>@leeracheal</p>
+                </div>
+              </div>
+              <button>
+                <svg
+                  width="167"
+                  height="167"
+                  viewBox="0 0 167 167"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="w-6 h-6 rounded-full  p-1 bg-[#f5f5f5]"
+                >
+                  <path
+                    d="M124.798 90.1316H90.1316V124.798C90.1316 128.611 87.0117 131.731 83.1984 131.731C79.3852 131.731 76.2652 128.611 76.2652 124.798V90.1316H41.5992C37.786 90.1316 34.666 87.0117 34.666 83.1984C34.666 79.3852 37.786 76.2652 41.5992 76.2652H76.2652V41.5992C76.2652 37.786 79.3852 34.666 83.1984 34.666C87.0117 34.666 90.1316 37.786 90.1316 41.5992V76.2652H124.798C128.611 76.2652 131.731 79.3852 131.731 83.1984C131.731 87.0117 128.611 90.1316 124.798 90.1316Z"
+                    fill="black"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div className="flex justify-between items-center border-b border-[#f5f5f5] py-1">
+              <div className="flex gap-2 items-center">
+                <img
+                  src="/avatar.png"
+                  alt=""
+                  className="w-8 h-8 bg-[#f5f5f5] rounded-full"
+                />
+                <div className="">
+                  <p className="text-[#222222]">Amber Patel</p>
+                  <p>@patel</p>
+                </div>
+              </div>
+              <button>
+                <svg
+                  width="167"
+                  height="167"
+                  viewBox="0 0 167 167"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="w-6 h-6 rounded-full  p-1 bg-[#222222]"
+                >
+                  <path
+                    d="M63.2372 112.494L39.179 88.4356C36.4751 85.7316 32.1072 85.7316 29.4032 88.4356C26.6993 91.1395 26.6993 95.5075 29.4032 98.2114L58.384 127.192C61.0879 129.896 65.4558 129.896 68.1598 127.192L141.513 53.8389C144.217 51.135 144.217 46.7671 141.513 44.0631C138.809 41.3592 134.441 41.3592 131.737 44.0631L63.2372 112.494Z"
+                    fill="white"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div className="flex justify-between items-center ">
+              <div className="flex gap-2 items-center">
+                <img
+                  src="/avatar.png"
+                  alt=""
+                  className="w-8 h-8 bg-[#f5f5f5] rounded-full"
+                />
+                <div className="">
+                  <p className="text-[#222222]">Ali Corak</p>
+                  <p>@ali</p>
+                </div>
+              </div>
+              <button>
+                <svg
+                  width="167"
+                  height="167"
+                  viewBox="0 0 167 167"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="w-6 h-6 rounded-full  p-1 bg-[#f5f5f5]"
+                >
+                  <path
+                    d="M124.798 90.1316H90.1316V124.798C90.1316 128.611 87.0117 131.731 83.1984 131.731C79.3852 131.731 76.2652 128.611 76.2652 124.798V90.1316H41.5992C37.786 90.1316 34.666 87.0117 34.666 83.1984C34.666 79.3852 37.786 76.2652 41.5992 76.2652H76.2652V41.5992C76.2652 37.786 79.3852 34.666 83.1984 34.666C87.0117 34.666 90.1316 37.786 90.1316 41.5992V76.2652H124.798C128.611 76.2652 131.731 79.3852 131.731 83.1984C131.731 87.0117 128.611 90.1316 124.798 90.1316Z"
+                    fill="black"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div className="absolute bottom-0 left-0 w-full flex items-center justify-center bg-gradient-to-b from-white/0 to-60% to-[#f5f5f5] p-3">
+          <div className="flex items-center text-white text-[0.6rem] pl-2 p-1  pr-0  bg-[#222222] rounded-full  ">
+            <p>2 requests sent</p>
+            <div className="flex relative  w-12">
+              <img
+                src="/avatar.png"
+                alt=""
+                className="w-5 h-5 bg-[#f5f5f5] relative left-2 rounded-full"
+              />
+              <img
+                src="/avatar.png"
+                alt=""
+                className="w-5 h-5 bg-[#f5f5f5]  rounded-full"
+              />
+            </div>
+          </div>
         </div>
       </div>
     );
@@ -32,7 +221,7 @@ const PortfolioCard = () => {
   return (
     <div className="bg-white rounded-3xl p-6 border-gray-400 gap-4 shadow-sm text-[#828282] max-w-[750px] grid grid-cols-2 text-sm font-poppins">
       <div className="col-span-1 flex flex-col gap-4">
-        <div className="w-10 h-10 bg-gradient-to-tr rounded-lg from-gray-200 to-[#f5f5f5]" />
+        <div className="w-8 h-8 bg-gradient-to-tr rounded-lg from-gray-200 to-[#f5f5f5]" />
         <h1 className="text-xl font-bold text-[#222222]">product design</h1>
         <p className="">
           Seize attention and boost conversions with a design meticulously
@@ -132,7 +321,7 @@ const PortfolioCard = () => {
         </button>
       </div>
       <div className="col-span-2 pt-4  border-t border-[#f5f5f5]">
-        <div className="bg-[#e6e6e6] w-full rounded-xl h-[400px]  bg-gradient-to-bl border flex justify-center items-center border-gray-200 relative  from-gray-200 to-[#f5f5f5]">
+        <div className="bg-[#e6e6e6] w-full rounded-xl h-[450px]  bg-gradient-to-bl border flex justify-center items-center border-gray-200 relative  from-gray-200 to-[#f5f5f5]">
           <FindFriendsCard />
           <div className="flex gap-5 absolute right-5 bottom-5">
             <button>
@@ -142,7 +331,7 @@ const PortfolioCard = () => {
                 viewBox="0 0 167 167"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                className="w-10 h-10 rounded-full shadow-lg p-2 bg-white"
+                className="w-9 h-9 rounded-full shadow-lg p-2 bg-white"
               >
                 <path
                   d="M101.987 46.5216C99.2833 43.8177 94.9154 43.8177 92.2115 46.5216L60.3881 78.345C57.6841 81.0489 57.6841 85.4169 60.3881 88.1208L92.2115 119.944C94.9154 122.648 99.2833 122.648 101.987 119.944C104.691 117.24 104.691 112.872 101.987 110.168L75.0865 83.1982L101.987 56.2974C104.691 53.5935 104.622 49.1562 101.987 46.5216Z"
@@ -158,7 +347,7 @@ const PortfolioCard = () => {
                 viewBox="0 0 167 167"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                className="w-10 h-10 rounded-full shadow-lg p-2 bg-white"
+                className="w-9 h-9 rounded-full shadow-lg p-2 bg-white"
               >
                 <path
                   d="M64.4098 46.5219C61.7058 49.2259 61.7058 53.5938 64.4098 56.2978L91.3106 83.1986L64.4098 110.099C61.7058 112.803 61.7058 117.171 64.4098 119.875C67.1137 122.579 71.4817 122.579 74.1856 119.875L106.009 88.0518C108.713 85.3479 108.713 80.9799 106.009 78.276L74.1856 46.4526C71.551 43.818 67.1137 43.818 64.4098 46.5219Z"
