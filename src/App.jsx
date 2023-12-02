@@ -1,10 +1,12 @@
-import PortfolioCard from "./components/PortfolioCard";
+import { ResponsiveSidebar } from "./components/ResponsiveSidebar";
+
+// import { LoaderButton } from "./components/LoaderButton";
 
 function App() {
   return (
-    <div className="w-screen h-screen flex justify-center items-center bg-[#f5f5f5]">
-      <PortfolioCard />
-    </div>
+    // <div className="h-screen w-screen flex bg-gray-200 justify-center items-center">
+    <ResponsiveSidebar />
+    // </div>
   );
 }
 
