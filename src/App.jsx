@@ -1,13 +1,7 @@
-import { ResponsiveSidebar } from "./components/ResponsiveSidebar";
-
-// import { LoaderButton } from "./components/LoaderButton";
+import { TouchButton } from "./components/TouchButton";
 
 function App() {
-  return (
-    // <div className="h-screen w-screen flex bg-gray-200 justify-center items-center">
-    <ResponsiveSidebar />
-    // </div>
-  );
+  return <TouchButton />;
 }
 
 export default App;
