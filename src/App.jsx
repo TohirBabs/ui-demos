@@ -1,7 +1,7 @@
-import { TouchButton } from "./components/TouchButton";
+import { ActiveSidebar } from "./components/ActiveSidebar";
 
 function App() {
-  return <TouchButton />;
+  return <ActiveSidebar />;
 }
 
 export default App;
