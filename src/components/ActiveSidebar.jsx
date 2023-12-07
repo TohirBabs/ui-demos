@@ -1,4 +1,17 @@
+import { useState } from "react";
+
 export const ActiveSidebar = () => {
+  const [nav, setNav] = useState(-1);
+  const subNavs = ["what is attio", "attio glossary"];
+  console.log(nav);
+  const SubNavButton = ({ title, index }) => {
+    return (
+      <button onClick={() => setNav(index)} className="text-left">
+        {title}
+      </button>
+    );
+  };
+
   return (
     <div className="w-screen h-screen  p-5">
       <div className="flex flex-col gap-4 bg-white w-[500px]">
@@ -26,11 +39,16 @@ export const ActiveSidebar = () => {
           </div>
           <div className="flex gap-3 h-max">
             <div className="h-[70px] w-[2px] mx-3 relative bg-blue-500/20">
-              <div className="h-[35px] w-[2px] absolute  bg-blue-500"></div>
+              <div
+                className={`h-[35px] w-[2px] absolute  bg-blue-500 top-${
+                  nav * 35
+                }px`}
+              ></div>
             </div>
             <div className="flex flex-col gap-3">
-              <button className="text-left">what is attio</button>
-              <button className="text-left">attio glossary</button>
+              {subNavs.map((navItem, index) => (
+                <SubNavButton key={index} title={navItem} index={index} />
+              ))}
             </div>
           </div>
         </div>
