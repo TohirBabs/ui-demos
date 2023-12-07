@@ -25,8 +25,8 @@ export const ActiveSidebar = () => {
             <p>Getting Started</p>
           </div>
           <div className="flex gap-3 h-max">
-            <div className="h-[70px] w-[2px] mx-3 bg-blue-500/20">
-              <div className="h-[35px] w-[2px]  bg-blue-500"></div>
+            <div className="h-[70px] w-[2px] mx-3 relative bg-blue-500/20">
+              <div className="h-[35px] w-[2px] absolute  bg-blue-500"></div>
             </div>
             <div className="flex flex-col gap-3">
               <button className="text-left">what is attio</button>
