@@ -35,6 +35,10 @@ export const ActiveSidebar = () => {
         "fragments",
       ],
     },
+    {
+      title: "api reference",
+      subnavs: ["reactDOM", "test renderer  ", "js environment", "glossary"],
+    },
   ];
 
   const NavItem = ({ navItem }) => {
@@ -43,7 +47,7 @@ export const ActiveSidebar = () => {
       return (
         <button
           onClick={() => setNav(index)}
-          className="text-left h-[40px] text-sm text-gray-600 hover:text-black "
+          className="text-left h-[50px]  text-gray-600 hover:text-black "
         >
           {title}
         </button>
@@ -57,8 +61,8 @@ export const ActiveSidebar = () => {
         onClick={() => setOpen(navItem.title)}
         style={{
           height: isOpen
-            ? `${(navItem.subnavs.length + 1) * 40 + 40}px`
-            : "40px",
+            ? `${(navItem.subnavs.length + 1) * 50 + 40}px`
+            : "50px",
           backgroundColor: isOpen ? "rgb(239 246 255)" : "white",
         }}
         className="flex flex-col gap-4 p-4
@@ -69,7 +73,7 @@ export const ActiveSidebar = () => {
             style={{
               transform: isOpen ? "rotate(0deg)" : "rotate(-90deg)",
             }}
-            className=" transition-transform duration-300"
+            className=" transition-transform duration-300 hover:text-blue-500"
           >
             <svg
               width="24"
@@ -91,19 +95,19 @@ export const ActiveSidebar = () => {
           <p
             style={{ color: isOpen ? "rgb(59 130 246)" : "black" }}
             onClick={() => setNav(-1)}
-            className="cursor-pointer  "
+            className="cursor-pointer text-lg  "
           >
             {navItem.title}
           </p>
         </div>
         <div className="flex gap-3 h-max">
           <div
-            style={{ height: `${navItem.subnavs.length * 40}px` }}
+            style={{ height: `${navItem.subnavs.length * 50}px` }}
             className=" w-[3px] mx-3 relative bg-blue-500/20 overflow-hidden ease-in rounded-full"
           >
             <div
-              style={{ top: `${nav * 40}px` }}
-              className={`h-[40px] w-[3px] absolute  bg-blue-500 transition-all rounded-full duration-300  `}
+              style={{ top: `${nav * 50}px` }}
+              className={`h-[50px] w-[3px] absolute  bg-blue-500 transition-all rounded-full duration-300  `}
             ></div>
           </div>
           <div className="flex flex-col ">
@@ -118,9 +122,9 @@ export const ActiveSidebar = () => {
 
   return (
     <div className="w-screen h-screen  p-5 font-poppins">
-      <div className="flex flex-col gap-4 bg-white w-[400px]">
+      <div className="flex flex-col gap-4 bg-white w-[450px]">
         <h1>
-          <p className="uppercase">GET STARTED</p>
+          <p className="uppercase semibold">REACT DOCUMENTATION</p>
         </h1>
         {NavItems.map((navItem, index) => (
           <NavItem key={index} navItem={navItem} />
