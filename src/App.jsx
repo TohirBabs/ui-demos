@@ -1,7 +1,7 @@
-import { ActiveSidebar } from "./components/ActiveSidebar";
+import HarvestGrove from "./components/HarvestGrove";
 
 function App() {
-  return <ActiveSidebar />;
+  return <HarvestGrove />;
 }
 
 export default App;
