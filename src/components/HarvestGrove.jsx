@@ -10,7 +10,7 @@ const HarvestGrove = () => {
 
   return (
     <div className=" min-h-screen overflow-hidden font-poppins relative">
-      <header className="w-full h-[4.2rem] flex items-center absolute top-0 justify-between px-20 border-b-[#090909]/10 border">
+      <header className="w-full h-[4.5rem] flex items-center z-10 absolute top-0 justify-between px-20 border-b-[#090909]/10 border">
         <div className="flex gap-8 items-center">
           <div className="flex items-center gap-2">
             <svg
@@ -39,11 +39,14 @@ const HarvestGrove = () => {
             ))}
           </nav>
         </div>
-        <div className="flex">
+        <div
+          className="flex group cursor-pointer
+        "
+        >
           <button className="h-12 rounded-full px-7 border border-black text-sm">
             Contact us
           </button>
-          <button className="h-12 rounded-full px-3 border border-black text-sm">
+          <button className="h-12 rounded-full px-3 border border-black text-sm group-hover:rotate-45 transition-transform ">
             <svg
               width="24"
               height="24"
@@ -147,7 +150,7 @@ const HarvestGrove = () => {
         </p>
       </div>
       <div className="w-[95vw] flex relative max-w-[1200px] mx-auto py-10">
-        <div className="bg-slate-100 flex  items-end rounded-3xl w-[60%]">
+        <div className="bg-[#0EA91E] bg-opacity-10 flex  items-end rounded-3xl w-[60%]">
           <img src="sectimg1.png" alt="" className="h-[450px]" />
           <div className="flex p-8">
             <button className="h-12 rounded-full px-7 border border-black text-sm">
@@ -223,7 +226,7 @@ const HarvestGrove = () => {
           </div>
         </div>
         <div className="flex justify-between py-10">
-          <div className="p-3 rounded-3xl bg-slate-100 w-[32%] flex flex-col gap-2">
+          <div className="p-3 rounded-3xl bg-[#0EA91E] bg-opacity-10 w-[32%] flex flex-col gap-2">
             <img src="/slide1.png" alt="" className="pb-3" />
             <p className="font-semibold capitalize px-2">premium produce</p>
             <p className="text-sm leading-[1.2rem] px-2">
@@ -231,7 +234,7 @@ const HarvestGrove = () => {
               vegetables, showcases the fertile abundance of our land.
             </p>
           </div>
-          <div className="p-3 rounded-3xl bg-slate-100 w-[32%] flex flex-col gap-2">
+          <div className="p-3 rounded-3xl bg-[#0EA91E] bg-opacity-10 w-[32%] flex flex-col gap-2">
             <img src="/slide2.png" alt="" className="pb-3" />
             <p className="font-semibold capitalize px-2">sustainable farming</p>
             <p className="text-sm leading-[1.2rem] px-2">
@@ -239,7 +242,7 @@ const HarvestGrove = () => {
               prioritize soil health and environmental sustainability.
             </p>
           </div>{" "}
-          <div className="p-3 rounded-3xl bg-slate-100 w-[32%] flex flex-col gap-2">
+          <div className="p-3 rounded-3xl bg-[#0EA91E] bg-opacity-10 w-[32%] flex flex-col gap-2">
             <img src="/slide3.png" alt="" className="pb-3" />
             <p className="font-semibold capitalize px-2">
               farm-to-table experience
@@ -253,7 +256,7 @@ const HarvestGrove = () => {
         </div>
       </div>
       <div className="w-[95vw]  relative max-w-[1200px] mx-auto py-10 ">
-        <div className="flex justify-between">
+        <div className="flex justify-between items-center">
           <p className="text-5xl font-bold leading-[3.5rem] capitalize  ">
             cultivating a future <br />{" "}
             <svg
@@ -290,32 +293,91 @@ const HarvestGrove = () => {
             </p>
           </div>
         </div>
-        <div className="flex justify-between py-10">
-          <div className="w-[40%]"></div>
-          <div className="flex-1">
-            <div className="flex">
-              <button className="h-12 rounded-full px-7 border border-black text-sm">
-                Contact us
-              </button>
-              <button className="h-12 rounded-full px-3 border border-black text-sm">
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M5.63605 18.364L18.364 5.63604M18.364 5.63604V14.1213M18.364 5.63604H9.87869"
-                    stroke="black"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
-              </button>
+        <div className="flex justify-between py-10 gap-5">
+          <div className="w-[40%] relative">
+            <div className="h-[70%] rounded-3xl text-xs flex bg-[#0EA91E] bg-opacity-10 p-5 relative">
+              <p className="text-3xl font-bold leading-[3.5rem] text-[#0EA91E] capitalize ">
+                healthy <br />{" "}
+                <button className="h-12 rounded-full px-3 border border-black text-sm inline-block align-middle mx-2">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M5.63605 18.364L18.364 5.63604M18.364 5.63604V14.1213M18.364 5.63604H9.87869"
+                      stroke="black"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </button>
+                agro <br /> products
+              </p>
+              <div className=" flex-col flex items-end gap-3 flex-1">
+                <span className="border border-[#0EA91E]  rounded-full p-4 px-6">
+                  swift delivery
+                </span>
+                <span className="border border-[#0EA91E]  rounded-full p-4 px-12">
+                  swift delivery
+                </span>{" "}
+                <span className="border border-[#0EA91E]  rounded-full p-4 px-14">
+                  24/7 customer service
+                </span>
+              </div>
             </div>
-            <img src="/farm.png" alt="" />
+            <div className="w-[38%] text-xs py-2 flex-col flex  gap-2 h-[30%]  relative">
+              <div className="absolute -top-12 right-0 z-10  w-6 h-12 bg-transparent rounded-br-3xl shadow-[0rem_2rem_0px_0px_white]"></div>
+
+              <div className="border border-[#0EA91E] relative z-10  rounded-full p-4 flex justify-center">
+                swift
+              </div>
+              <div className="border border-[#0EA91E]  rounded-full p-4 flex justify-center">
+                delivery
+              </div>
+            </div>
+            <div className="pt-3 pl-3 absolute bottom-0 w-[62%]  right-0  bg-white  rounded-tl-3xl">
+              <div className="absolute -top-12 right-0 z-10  w-6 h-12 bg-transparent rounded-br-3xl shadow-[0rem_2rem_0px_0px_white]"></div>
+              <img
+                className="rounded-2xl relative z-10"
+                src="/farmer.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div className="flex-1 relative ">
+            <div className="absolute right-0">
+              <div className=" bg-white flex items-left justify-center flex-col text-left  p-4  rounded-bl-3xl">
+                <div className="absolute top-0 -left-12 z-10  w-12 h-6 bg-transparent rounded-tr-3xl shadow-[1rem_0px_0px_0px_white]"></div>
+                <div className="absolute -bottom-12 right-0 z-10  w-6 h-12 bg-transparent rounded-tr-3xl shadow-[0rem_-1.4rem_0px_0px_white]"></div>
+                <div className="flex">
+                  <button className="h-12 rounded-full px-7 border border-black text-sm">
+                    Shop now
+                  </button>
+                  <button className="h-12 rounded-full px-3 border border-black text-sm">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M5.63605 18.364L18.364 5.63604M18.364 5.63604V14.1213M18.364 5.63604H9.87869"
+                        stroke="black"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <img src="/farm.png" alt="" className="rounded-3xl " />
           </div>
         </div>
       </div>
@@ -367,7 +429,7 @@ const HarvestGrove = () => {
               </button>
             </div>
           </div>
-          <div className="flex-1 h-[295px] gap-20 bg-slate-100 rounded-3xl flex capitalize p-10 text-xs">
+          <div className="flex-1 h-[295px] gap-20 bg-[#0EA91E] bg-opacity-10 rounded-3xl flex capitalize p-10 text-xs">
             <div className="flex flex-col gap-6">
               <p>links</p>
               <div className="flex flex-col gap-4">
@@ -418,7 +480,7 @@ const HarvestGrove = () => {
           <p>&copy;2023 HarvestGrove</p>
           <div className="flex items-center gap-2">
             <a href="/">privacy policy</a>
-            <div className="w-2 h-2 rounded-full bg-slate-200"></div>
+            <div className="w-2 h-2 rounded-full bg-lime-200"></div>
             <a href="/">terms of use</a>
           </div>
         </div>
