@@ -10,6 +10,10 @@ const router = createBrowserRouter([
     path: "/harvestgrove",
     element: <HarvestGrove />,
   },
+  {
+    path: "/",
+    element: <App />,
+  },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
