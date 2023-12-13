@@ -1,7 +1,7 @@
-import HarvestGrove from "./components/HarvestGrove";
+import Bujeti from "./components/Bujeti/Bujeti";
 
 function App() {
-  return <HarvestGrove />;
+  return <Bujeti />;
 }
 
 export default App;
