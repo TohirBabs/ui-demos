@@ -1,8 +1,9 @@
 import YouTube from "react-youtube";
+import { Partners } from "./Partners";
 export const Hero = () => {
   const Video = () => {
     const opts = {
-      height: "600",
+      height: "619",
       width: "1100",
       playerVars: {
         // https://developers.google.com/youtube/player_parameters
@@ -97,9 +98,12 @@ export const Hero = () => {
               try it today
             </button>
           </div>
-          <div className="w-[1100px] h-[650px] bg-slate-800"></div>
+          <div className="w-[1100px] h-[619px] bg-slate-800 rounded-3xl overflow-hidden border">
+            {/* <Video /> */}
+          </div>
         </div>
       </div>
+      <Partners />
     </div>
   );
 };
