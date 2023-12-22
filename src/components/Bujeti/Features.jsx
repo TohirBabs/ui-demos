@@ -108,8 +108,8 @@ const Features = () => {
   return (
     <div className="w-screen">
       
-      <div className=" text-center text-[#D28B28]  flex flex-col gap-5 items-center border-x max-w-6xl  w-full mx-auto border-slate-300">
-        <div className=" text-center text-[#D28B28] mx-auto w-[95%] max-w-5xl border-x border-slate-300 lg:py-32 flex flex-col gap-5 items-center">
+      <div className=" text-center text-[#D28B28]  flex flex-col gap-5 items-center border-x max-w-6xl border-y w-full mx-auto border-slate-300">
+        <div className=" text-center text-[#D28B28] mx-auto w-[95%] max-w-5xl border-x border-slate-300 lg:py-32 py-16 flex flex-col gap-5 items-center">
           <div className="flex gap-2 items-center rounded-full border border-slate-300 p-1 bg-white px-3">
             <svg
               width="16"
@@ -131,12 +131,12 @@ const Features = () => {
                 fill="#D28B28"
               ></path>
             </svg>
-            <p className="text-slate-900 font-semibold">Features</p>
+            <p className="text-slate-900 text-xs lg:text-sm font-semibold">Features</p>
           </div>
-          <h2 className="text-5xl border-b border-slate-300  font-semibold leading-[1.5]">
-            All you need to run your finances effectively
+          <h2 className="text-3xl lg:text-5xl  flex flex-col  w-full font-medium leading-[1.4]">
+           <div className="lg:border-b border-slate-300">All you need to run</div> <div className="border-b border-slate-300">your finances effectively</div> 
           </h2>
-          <p className="text-lg w-[90%] text-slate-900">
+          <p className="lg:text-lg text-sm lg:w-[70%] w-[88%] text-slate-900">
             Introducing Bujeti, a complete suite of finance tools designed to
             enhance your productivity, streamline operations, and drive business
             growth.
