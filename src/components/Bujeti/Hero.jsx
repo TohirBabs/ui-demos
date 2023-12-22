@@ -52,7 +52,7 @@ export const Hero = () => {
           </div>
           
          </div>
-          <div className=" w-full lg:p-3 p-1 border-y flex justify-center lg:z-30 bg-black/10 border-slate-300">
+          <div className=" w-full lg:p-3 p-1 border-y flex justify-center lg:z-30 bg-black/10 backdrop-blur-md border-slate-300">
             <DesktopVideo/>
             <MobileVideo/>
           </div>
