@@ -33,9 +33,9 @@ export const Hero = () => {
       
       <div className="w-screen bg-[#f7e8d4]">
         <div className="mx-auto w-full border-x  border-slate-300 text-center text-[#D28B28] max-w-6xl  flex flex-col  items-center">
-         <div className="flex flex-col items-center gap-5 max-w-5xl w-full border-x border-slate-300 py-20 pb-10 lg:pb-20">
-         <h2 className="lg:text-[3.6rem] text-3xl  font-semibold leading-[1.4] w-full ">
-           <div className="border-y border-slate-300"> Financial management </div><div className="border-b border-slate-300">for your African business</div>
+         <div className="flex flex-col items-center gap-5 max-w-5xl w-full border-x border-slate-300 py-10 lg:py-20">
+         <h2 className="lg:text-[3.6rem] text-[2.8rem]  font-semibold leading-[1.4] w-full ">
+           <div className="lg:border-y border-slate-300"> Financial management </div><div className="border-b border-slate-300">for your African business</div>
           </h2>
           <p className="lg:text-lg text-sm lg:w-[70%] text-slate-900">
             One platform for comprehensive management of all your financial
@@ -52,7 +52,7 @@ export const Hero = () => {
           </div>
           
          </div>
-          <div className=" w-full lg:p-3 p-1 border-y flex justify-center z-30 bg-black/10 border-slate-300">
+          <div className=" w-full lg:p-3 p-1 border-y flex justify-center lg:z-30 bg-black/10 border-slate-300">
             <DesktopVideo/>
             <MobileVideo/>
           </div>
