@@ -106,143 +106,11 @@ const Features = () => {
   };
 
   return (
-    <div className="w-screen  ">
-      <div className="w-screen min-h-[850vh] h-full absolute -z-10  ">
-        <div className=" absolute w-screen h-full  flex flex-col justify-between">
-          <div className="h-[1px] bg-[#D28B28]"></div>
-          <div className="h-[1px] bg-[#D28B28]"></div>
-          <div className="h-[1px] bg-[#D28B28]"></div>
-          <div className="h-[1px] bg-[#D28B28]"></div>
-          <div className="h-[1px] bg-[#D28B28]"></div>
-          <div className="h-[1px] bg-[#D28B28]"></div>
-          <div className="h-[1px] bg-[#D28B28]"></div>
-          <div className="h-[1px] bg-[#D28B28]"></div>
-          <div className="h-[1px] bg-[#D28B28]"></div>
-          <div className="h-[1px] bg-[#D28B28]"></div>
-          <div className="h-[1px] bg-[#D28B28]"></div>
-          <div className="h-[1px] bg-[#D28B28]"></div>
-          <div className="h-[1px] bg-[#D28B28]"></div>
-          <div className="h-[1px] bg-[#D28B28]"></div>
-          <div className="h-[1px] bg-[#D28B28]"></div>
-          <div className="h-[1px] bg-[#D28B28]"></div>
-          <div className="h-[1px] bg-[#D28B28]"></div>
-          <div className="h-[1px] bg-[#D28B28]"></div>
-          <div className="h-[1px] bg-[#D28B28]"></div>
-          <div className="h-[1px] bg-[#D28B28]"></div>
-          <div className="h-[1px] bg-[#D28B28]"></div>
-          <div className="h-[1px] bg-[#D28B28]"></div>
-          <div className="h-[1px] bg-[#D28B28]"></div>
-          <div className="h-[1px] bg-[#D28B28]"></div>
-          <div className="h-[1px] bg-[#D28B28]"></div>
-          <div className="h-[1px] bg-[#D28B28]"></div>
-          <div className="h-[1px] bg-[#D28B28]"></div>
-          <div className="h-[1px] bg-[#D28B28]"></div>
-          <div className="h-[1px] bg-[#D28B28]"></div>
-          <div className="h-[1px] bg-[#D28B28]"></div>
-          <div className="h-[1px] bg-[#D28B28]"></div>
-          <div className="h-[1px] bg-[#D28B28]"></div>
-          <div className="h-[1px] bg-[#D28B28]"></div>
-          <div className="h-[1px] bg-[#D28B28]"></div>
-          <div className="h-[1px] bg-[#D28B28]"></div>
-          <div className="h-[1px] bg-[#D28B28]"></div>
-          <div className="h-[1px] bg-[#D28B28]"></div>
-          <div className="h-[1px] bg-[#D28B28]"></div>
-          <div className="h-[1px] bg-[#D28B28]"></div>
-          <div className="h-[1px] bg-[#D28B28]"></div>
-          <div className="h-[1px] bg-[#D28B28]"></div>
-          <div className="h-[1px] bg-[#D28B28]"></div>
-          <div className="h-[1px] bg-[#D28B28]"></div>
-          <div className="h-[1px] bg-[#D28B28]"></div>
-          <div className="h-[1px] bg-[#D28B28]"></div>
-          <div className="h-[1px] bg-[#D28B28]"></div>
-          <div className="h-[1px] bg-[#D28B28]"></div>
-          <div className="h-[1px] bg-[#D28B28]"></div>
-          <div className="h-[1px] bg-[#D28B28]"></div>
-          <div className="h-[1px] bg-[#D28B28]"></div>
-          <div className="h-[1px] bg-[#D28B28]"></div>
-          <div className="h-[1px] bg-[#D28B28]"></div>
-          <div className="h-[1px] bg-[#D28B28]"></div>
-          <div className="h-[1px] bg-[#D28B28]"></div>
-          <div className="h-[1px] bg-[#D28B28]"></div>
-          <div className="h-[1px] bg-[#D28B28]"></div>
-          <div className="h-[1px] bg-[#D28B28]"></div>
-          <div className="h-[1px] bg-[#D28B28]"></div>
-          <div className="h-[1px] bg-[#D28B28]"></div>
-          <div className="h-[1px] bg-[#D28B28]"></div>
-          <div className="h-[1px] bg-[#D28B28]"></div>
-          <div className="h-[1px] bg-[#D28B28]"></div>
-          <div className="h-[1px] bg-[#D28B28]"></div>
-          <div className="h-[1px] bg-[#D28B28]"></div>
-          <div className="h-[1px] bg-[#D28B28]"></div>
-          <div className="h-[1px] bg-[#D28B28]"></div>
-          <div className="h-[1px] bg-[#D28B28]"></div>
-          <div className="h-[1px] bg-[#D28B28]"></div>
-          <div className="h-[1px] bg-[#D28B28]"></div>
-          <div className="h-[1px] bg-[#D28B28]"></div>
-          <div className="h-[1px] bg-[#D28B28]"></div>
-          <div className="h-[1px] bg-[#D28B28]"></div>
-          <div className="h-[1px] bg-[#D28B28]"></div>
-          <div className="h-[1px] bg-[#D28B28]"></div>
-          <div className="h-[1px] bg-[#D28B28]"></div>
-          <div className="h-[1px] bg-[#D28B28]"></div>
-          <div className="h-[1px] bg-[#D28B28]"></div>
-          <div className="h-[1px] bg-[#D28B28]"></div>
-          <div className="h-[1px] bg-[#D28B28]"></div>
-          <div className="h-[1px] bg-[#D28B28]"></div>
-          <div className="h-[1px] bg-[#D28B28]"></div>
-          <div className="h-[1px] bg-[#D28B28]"></div>
-          <div className="h-[1px] bg-[#D28B28]"></div>
-          <div className="h-[1px] bg-[#D28B28]"></div>
-          <div className="h-[1px] bg-[#D28B28]"></div>
-          <div className="h-[1px] bg-[#D28B28]"></div>
-          <div className="h-[1px] bg-[#D28B28]"></div>
-          <div className="h-[1px] bg-[#D28B28]"></div>
-          <div className="h-[1px] bg-[#D28B28]"></div>
-          <div className="h-[1px] bg-[#D28B28]"></div>
-          <div className="h-[1px] bg-[#D28B28]"></div>
-          <div className="h-[1px] bg-[#D28B28]"></div>
-          <div className="h-[1px] bg-[#D28B28]"></div>
-          <div className="h-[1px] bg-[#D28B28]"></div>
-          <div className="h-[1px] bg-[#D28B28]"></div>
-          <div className="h-[1px] bg-[#D28B28]"></div>
-          <div className="h-[1px] bg-[#D28B28]"></div>
-          <div className="h-[1px] bg-[#D28B28]"></div>
-          <div className="h-[1px] bg-[#D28B28]"></div>
-          <div className="h-[1px] bg-[#D28B28]"></div>
-          <div className="h-[1px] bg-[#D28B28]"></div>
-          <div className="h-[1px] bg-[#D28B28]"></div>
-          <div className="h-[1px] bg-[#D28B28]"></div>
-          <div className="h-[1px] bg-[#D28B28]"></div>
-          <div className="h-[1px] bg-[#D28B28]"></div>
-          <div className="h-[1px] bg-[#D28B28]"></div>
-          <div className="h-[1px] bg-[#D28B28]"></div>
-          <div className="h-[1px] bg-[#D28B28]"></div>
-          <div className="h-[1px] bg-[#D28B28]"></div>
-        </div>
-        <div className=" absolute w-screen h-full flex  justify-between">
-          <div className="w-[1px] bg-[#D28B28]"></div>
-          <div className="w-[1px] bg-[#D28B28]"></div>
-          <div className="w-[1px] bg-[#D28B28]"></div>
-          <div className="w-[1px] bg-[#D28B28]"></div>
-          <div className="w-[1px] bg-[#D28B28]"></div>
-          <div className="w-[1px] bg-[#D28B28]"></div>
-          <div className="w-[1px] bg-[#D28B28]"></div>
-          <div className="w-[1px] bg-[#D28B28]"></div>
-          <div className="w-[1px] bg-[#D28B28]"></div>
-          <div className="w-[1px] bg-[#D28B28]"></div>
-          <div className="w-[1px] bg-[#D28B28]"></div>
-          <div className="w-[1px] bg-[#D28B28]"></div>
-          <div className="w-[1px] bg-[#D28B28]"></div>
-          <div className="w-[1px] bg-[#D28B28]"></div>
-          <div className="w-[1px] bg-[#D28B28]"></div>
-          <div className="w-[1px] bg-[#D28B28]"></div>
-          <div className="w-[1px] bg-[#D28B28]"></div>
-        </div>
-        <div className="absolute w-screen h-full to-white/80 from-white bg-gradient-to-br"></div>
-      </div>
-      <div className=" text-center text-[#D28B28]  flex flex-col gap-5 items-center py-20 ">
-        <div className=" text-center text-[#D28B28] mx-auto w-[95%] max-w-4xl  flex flex-col gap-5 items-center">
-          <div className="flex gap-2 items-center">
+    <div className="w-screen">
+      
+      <div className=" text-center text-[#D28B28]  flex flex-col gap-5 items-center border-x max-w-6xl  w-full mx-auto border-slate-300">
+        <div className=" text-center text-[#D28B28] mx-auto w-[95%] max-w-5xl border-x border-slate-300 lg:py-32 flex flex-col gap-5 items-center">
+          <div className="flex gap-2 items-center rounded-full border border-slate-300 p-1 bg-white px-3">
             <svg
               width="16"
               height="17"
@@ -265,7 +133,7 @@ const Features = () => {
             </svg>
             <p className="text-slate-900 font-semibold">Features</p>
           </div>
-          <h2 className="text-5xl  font-semibold leading-[1.5]">
+          <h2 className="text-5xl border-b border-slate-300  font-semibold leading-[1.5]">
             All you need to run your finances effectively
           </h2>
           <p className="text-lg w-[90%] text-slate-900">
@@ -275,7 +143,7 @@ const Features = () => {
           </p>
         </div>
         <div className="flex flex-col items-end gap-10 py-20 relative w-screen">
-          <div className="sticky top-[10vh] right-0 w-[50%] rounded-l-3xl overflow-hidden shadow-lg">
+          {/* <div className="sticky top-[10vh] right-0 w-[50%] rounded-l-3xl overflow-hidden shadow-lg">
             <SectionImage />
           </div>
 
@@ -283,7 +151,7 @@ const Features = () => {
             {featureList.map((feature, index) => (
               <FeatureSection key={index} feature={feature} sectionId={index} />
             ))}
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
