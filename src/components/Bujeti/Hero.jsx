@@ -42,7 +42,7 @@ export const Hero = () => {
             services, from simple accounting all the way to corporate
             banking
           </p>
-          <div className="flex w-[88%] flex-col lg:flex-row lg:gap-8 gap-2 py-2">
+          <div className="flex w-[88%] lg:justify-center flex-col lg:flex-row lg:gap-8 gap-2 py-2">
             <button className="capitalize bg-white text-black py-2 px-6 rounded-xl border-4 border-black/20  ">
               meet an expert
             </button>
