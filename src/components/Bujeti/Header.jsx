@@ -3,7 +3,7 @@ import { useState } from "react";
 export const Header = () => {
   const [navOpen, setNavOpen] = useState(false)
     return (
-      <div className={`mx-auto w-full max-w-6xl border-x border-slate-300 sticky top-0  z-10  lg:p-0 lg:bg-[#f7e8d4]/50 backdrop-blur bg-${navOpen? "white":"[#f7e8d4]"}`}>
+      <div className={`mx-auto w-full max-w-6xl lg:border-x border-slate-300 sticky top-0  z-10  lg:p-0 lg:bg-[#f7e8d4]/50 backdrop-blur bg-${navOpen? "white":"[#f7e8d4]"}`}>
         <div className={`border-b border-x  border-[#d28b28]/500 mx-auto border-slate-300 w-full lg:px-8 py-3 text-black max-w-5xl  flex flex-col lg:flex-row lg:justify-between h-${navOpen?"screen":"16"} transition transition-all overflow-hidden lg:h-20 lg:items-center gap-5`}>
           <div className="flex justify-between w-full lg:w-auto px-3 lg:px-0 items-center">
             <img src="/bujeti.svg" alt="" className="h-10 p-2 px-4 rounded bg-[#bfff0b]"/>
@@ -22,7 +22,7 @@ export const Header = () => {
             </nav>
           
           <div className="flex flex-col lg:flex-row lg:gap-8 gap-5 p-3 w-max">
-            <button className="capitalize p-2 border-b-4 border-[#bfff0b] ">log in</button>
+            <button className="capitalize bg-white text-black py-2 px-6 rounded-xl border-4 border-black/20  ">log in</button>
             <button className="capitalize bg-[#bfff0b] hidden lg:block text-black py-2 px-6 rounded-xl border-4 border-black/20 ">
               try it today
             </button>
