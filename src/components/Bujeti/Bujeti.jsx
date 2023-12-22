@@ -9,13 +9,13 @@ import { Header } from "./Header";
 
 const Bujeti = () => {
   return (
-    <div className="font-poppins">
+    <div className="font-poppins  bg-[#f7e8d4]">
       <Header/>
       <Hero />
-      <Features />
+      {/* <Features /> */}
       <Trial />
-      <FAQ />
-      <Footer />
+      {/* <FAQ /> */}
+      {/* <Footer /> */}
     </div>
   );
 };
