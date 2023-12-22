@@ -12,7 +12,7 @@ const Bujeti = () => {
     <div className="font-poppins  bg-[#f7e8d4]">
       <Header/>
       <Hero />
-      {/* <Features /> */}
+      <Features />
       <Trial />
       {/* <FAQ /> */}
       {/* <Footer /> */}
