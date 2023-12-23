@@ -106,7 +106,7 @@ const Features = () => {
   };
 
   return (
-    <div className="w-screen">
+  
       
       <div className=" text-center text-[#D28B28] mx-auto w-[95%] max-w-5xl border-x border-slate-300 lg:py-32  py-16 flex flex-col gap-5 items-center border-x max-w-6xl border-y w-full mx-auto border-slate-300">
         <div className="   flex flex-col gap-5 items-center">
@@ -171,7 +171,7 @@ const Features = () => {
           </div>
           </div>
       </div>
-    </div>
+  
   );
 };
 
