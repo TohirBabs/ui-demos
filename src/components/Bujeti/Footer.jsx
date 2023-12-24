@@ -1,6 +1,6 @@
 export const Footer = () => {
   return (
-    <div className="w-screen flex justify-between bg-[#D28B28] text-white p-12 gap-5 py-20 text-xs rounded-t-[3rem]">
+    <div className=" flex justify-between bg-[#D28B28] text-white p-12 gap-5 py-20 text-xs rounded-t-[3rem]">
       <div className="flex flex-col text-sm gap-8 max-w-[250px]">
         <img src="/bujeti.svg" alt="" className="h-10 w-max" />
         <p>Plot 1B, Block 129, Jide Sawyerr Drive, Lekki Phase 1, Lagos.</p>
