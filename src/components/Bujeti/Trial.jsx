@@ -1,6 +1,6 @@
 export const Trial = () => {
   return (
-    <div className="w-screen ">
+    
       <div className="mx-auto w-[95%] text-[#D28B28] max-w-6xl  flex flex-col lg:flex-row justify-between  items-center">
         <img src="/mobile.webp" alt="" />
         <div className="flex max-w-2xl flex-col gap-5">
@@ -18,6 +18,6 @@ export const Trial = () => {
           </div>
         </div>
       </div>
-    </div>
+    
   );
 };
