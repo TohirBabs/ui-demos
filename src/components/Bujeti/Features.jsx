@@ -142,8 +142,7 @@ const Features = () => {
             growth.
           </p>
         </div>
-        <div className="flex border-t border-slate-300 flex-col items-end gap-10 relative w-full max-w-6xl">
-         
+        <div className="flex border-t border-slate-300 flex-col items-end gap-10 relative w-full max-w-6xl">        
           <div className="lg:grid lg:grid-cols-12 flex flex-col gap-5 lg:gap-10 w-full max-w-6xl lg:p-10 p-3 mx-auto">
            <div className="rounded-3xl flex flex-col justify-between overflow-hidden text-left bg-[#e9e9e7]  lg:col-span-7 ">
             <div className="lg:w-[70%] text-slate-900 lg:p-9 p-3">
@@ -151,7 +150,6 @@ const Features = () => {
               <p className="text-sm">Generate physical, single-use, and multi-use virtual multi-currency cards for your team to spend flexibly without needing cash.</p>
             </div>
             <img src="/cards.webp" alt="" className=""/>
-
           </div>
           <div className="rounded-3xl overflow-hidden text-left bg-[#ebe8de]  lg:col-span-5 ">
             <div className="w-[90%] lg:p-9 p-3 text-slate-900 p-4">
@@ -185,15 +183,14 @@ const Features = () => {
             <img src="/reimbursement.webp" alt="" className=""/>
 
           </div>
-          <div className="rounded-3xl overflow-hidden text-left bg-[#ebe8de]  lg:col-span-5 ">
+          <div className="rounded-3xl overflow-hidden text-left bg-[#f8ede8]  lg:col-span-5 ">
             <div className="w-[90%] lg:p-9 p-3 text-slate-900 p-4">
               <p className="text-2xl capitalize font-semibold">fund collection</p>
               <p className="text-sm"> Secure payment gateway to collect payments from customers anywhere, anytime.</p>
             </div>
             <img src="/fund.webp" alt="" className=""/>
 
-          </div>
-          
+          </div>          
           <div className="rounded-3xl overflow-hidden text-left bg-[#f2f5f1]  lg:col-span-5 ">
             <div className="w-[90%] lg:p-9 p-3 text-slate-900 p-4">
               <p className="text-2xl capitalize font-semibold">bank sync</p>
