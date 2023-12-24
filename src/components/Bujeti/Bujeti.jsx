@@ -5,19 +5,17 @@ import Features from "./Features";
 import { Footer } from "./Footer";
 import { Trial } from "./Trial";
 import { FAQ } from "./FAQ";
-import { Integrations } from "./Integrations";
-import { Reason } from "./Reason";
+import { Header } from "./Header";
 
 const Bujeti = () => {
   return (
-    <div className="font-poppins">
+    <div className="font-poppins  bg-[#f7e8d4]">
+      <Header />
       <Hero />
       <Features />
-      <Integrations />
-      <Reason />
-      <FAQ />
       <Trial />
-      <Footer />
+      {/* <FAQ /> */}
+      {/* <Footer /> */}
     </div>
   );
 };
