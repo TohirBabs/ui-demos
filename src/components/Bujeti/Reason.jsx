@@ -246,9 +246,9 @@ export const Reason = () => {
 
   const ForCards = ({card}) => {
     return ( <div className=" flex max-w-[350px]  items-center lg:gap-4 gap-2">
-    <div className="w-10 h-10 overflow-hidden">
+    {/* <div className="w-10 h-10 overflow-hidden"> */}
     {card.icon}
-    </div>
+    {/* </div> */}
     <div className="">
     <p className="text-[#bfff0b] text-xl font-bold capitalize">
      {card.title}
