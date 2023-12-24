@@ -263,7 +263,7 @@ export const Reason = () => {
 
   return (
     <div className=" bg-[#1C1917] ">
-      <div className="flex flex-col  max-w-6xl mx-auto lg:flex-row justify-center lg:gap-5 gap-2 lg:py-20 p-4 text-white items-center">
+      <div className="flex flex-col  max-w-6xl mx-auto lg:flex-row justify-center lg:gap-5 gap-4 lg:py-20 p-4 text-white items-center">
         <div className=" flex flex-col gap-5">
         <div className="flex w-max gap-2 items-center rounded-full border border-slate-300 p-1 bg-white px-3">
       <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -280,7 +280,7 @@ export const Reason = () => {
         </p>
         </div>
      
-        <div className="flex flex-wrap  rounded-xl lg:max-w-3xl justify-center my-3 gap-4 ">
+        <div className="flex flex-wrap  rounded-xl lg:max-w-3xl justify-center my-3  ">
           {forList.map((list, index) => <ForCards key={index} card={list}/>)}
    
         </div>
