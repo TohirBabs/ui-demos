@@ -6,6 +6,7 @@ import { Header } from "./Header";
 import { Integrations } from "./Integrations";
 import { FAQ } from "./FAQ";
 import { Footer } from "./Footer";
+import { Reason } from "./Reason";
 
 const Bujeti = () => {
   return (
@@ -14,6 +15,7 @@ const Bujeti = () => {
       <Hero />
       <Features />
       <Integrations/>
+      <Reason/>
       <FAQ/>
       <Trial />
      
