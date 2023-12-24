@@ -1,7 +1,6 @@
 import { useState } from "react";
 
 export const FAQ = () => {
-  const [open, setopen] = useState(-1);
 
   const faqs = [
     {
@@ -46,49 +45,29 @@ export const FAQ = () => {
     },
   ];
   const Question = ({ faq, index }) => {
+  const [open, setopen] = useState(false);
+
     return (
       <div
-        style={{ height: open == index ? "180px" : "64px" }}
-        className="p-4 rounded-xl flex-col flex gap-4 border transition-all h-16 overflow-hidden"
+        // style={{ height: open ? "180px" : "50px" }}
+        className=" flex-col flex gap-2  max-w-[390px] w-full h-full transition-all overflow-hidden "
       >
-        <button
-          onClick={() => (open === index ? setopen(-1) : setopen(index))}
-          className="flex justify-between items-center"
-        >
+      
           <p className="text-lg">{faq.question}</p>
-          <div
-            style={{
-              transform: open == index ? "rotate(0deg)" : "rotate(90deg)",
-            }}
-            className=""
-          >
-            <svg
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M5.63605 18.364L18.364 5.63604M18.364 5.63604V14.1213M18.364 5.63604H9.87869"
-                stroke="black"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-            </svg>
-          </div>
-        </button>
+         
+    
 
-        <p className="text-slate-900">{faq.answer}</p>
+        <p className="text-black text-sm p-4 rounded-xl bg-[#f8ede8]">{faq.answer}</p>
+     
       </div>
     );
   };
   return (
-    <div className="w-screen my-20">
-      <div className="mx-auto w-[95%] text-[#D28B28] max-w-3xl  flex flex-col justify-center gap-5  items-center">
-        <div className="flex gap-2 items-center">
-          <svg
+    <div className=" bg-white py-20">
+      <div className="mx-auto w-[95%] text-[#D28B28] max-w-7xl  flex flex-col justify-center gap-5  items-center">
+       
+        <div className="flex gap-2 items-center rounded-full border border-slate-300 p-1 bg-white px-3">
+        <svg
             width="16"
             height="17"
             viewBox="0 0 16 17"
@@ -108,19 +87,17 @@ export const FAQ = () => {
               fill="#bfff0b"
             ></path>
           </svg>
-          <p className="text-slate-900 font-semibold">
-            frequently asked questions
-          </p>
-        </div>
-        <h2 className="text-5xl  font-semibold leading-[1.5]">
+            <p className="text-slate-900 text-xs lg:text-sm font-semibold">frequently asked questions</p>
+          </div>
+          <h2 className="text-[1.7rem] lg:text-5xl  flex flex-col text-center w-full font-semibold lg:leading-[1.4]">
           Have any questions?
         </h2>
-        <p className="text-center w-[90%] text-slate-900">
+        <p className="lg:text-lg text-sm lg:w-[70%] max-w-3xl w-[88%] text-slate-900 text-center">
           Financial management is a universal challenge for businesses of all
-          sizes. <br />
+          sizes. 
           Dive deeper into our FAQs to find solutions.
         </p>
-        <div className="flex flex-col gap-4 w-full">
+        <div className="flex justify-center  gap-5 w-full flex-wrap">
           {faqs.map((faq, index) => (
             <Question faq={faq} key={index} index={index} />
           ))}
