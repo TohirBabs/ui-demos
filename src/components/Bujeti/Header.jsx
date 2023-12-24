@@ -3,8 +3,8 @@ import { useState } from "react";
 export const Header = () => {
   const [navOpen, setNavOpen] = useState(false)
     return (
-      <div className={`mx-auto w-full max-w-6xl lg:border-x border-slate-300 sticky top-0  z-10  lg:p-0 lg:bg-[#f7e8d4]/50 backdrop-blur bg-${navOpen? "white":"[#f7e8d4]/50"}`}>
-        <div className={`border-b border-x  border-[#d28b28]/500 mx-auto border-slate-300 w-full lg:px-8 py-3 text-black max-w-5xl  flex flex-col lg:flex-row lg:justify-between h-${navOpen?"screen":"16"} transition transition-all overflow-hidden lg:h-20 lg:items-center gap-5`}>
+      <div className={`mx-auto w-full max-w-6xl lg:border-x border-slate-300 sticky top-0  z-10  lg:p-0  bg-${navOpen? "white":"[#f7e8d4]/50"}`}>
+        <div className={`border-b border-x  border-[#d28b28]/500 mx-auto border-slate-300 w-full  backdrop-blur lg:px-8 py-3 text-black max-w-5xl  flex flex-col lg:flex-row lg:justify-between h-${navOpen?"screen":"16"} transition transition-all overflow-hidden lg:h-20 lg:items-center gap-5`}>
           <div className="flex justify-between w-full lg:w-auto px-3 lg:px-0 items-center">
             <img src="/bujeti.svg" alt="" className="h-10 p-2 px-4 rounded bg-[#bfff0b]"/>
             <div onClick={() => setNavOpen(!navOpen)} className="lg:hidden flex flex-col gap-1">

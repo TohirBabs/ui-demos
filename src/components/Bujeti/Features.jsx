@@ -108,8 +108,8 @@ const Features = () => {
   return (
   
       
-      <div className=" text-center text-[#D28B28] mx-auto w-[95%] max-w-5xl border-x border-slate-300 lg:py-32  py-16 flex flex-col gap-5 items-center border-x max-w-6xl border-y w-full mx-auto border-slate-300">
-        <div className="   flex flex-col gap-5 items-center">
+      <div className="bg-[#fafaf9] text-center text-[#D28B28] mx-auto w-[95%] max-w-5xl border-x border-slate-300 lg:pt-32  pt-16 flex flex-col items-center border-x max-w-6xl border-y w-full mx-auto border-slate-300">
+        <div className=" max-w-5xl border-x border-slate-300 py-20 border-t  flex flex-col gap-5 items-center">
           <div className="flex gap-2 items-center rounded-full border border-slate-300 p-1 bg-white px-3">
             <svg
               width="16"
@@ -142,31 +142,75 @@ const Features = () => {
             growth.
           </p>
         </div>
-        <div className="flex flex-col items-end gap-10 py-20 relative w-screen">
-          {/* <div className="sticky top-[10vh] right-0 w-[50%] rounded-l-3xl overflow-hidden shadow-lg">
-            <SectionImage />
-          </div>
+        <div className="flex border-t border-slate-300 flex-col items-end gap-10 relative w-full max-w-6xl">
+         
+          <div className="lg:grid lg:grid-cols-12 flex flex-col gap-5 lg:gap-10 w-full max-w-6xl lg:p-10 p-3 mx-auto">
+           <div className="rounded-3xl flex flex-col justify-between overflow-hidden text-left bg-[#e9e9e7]  lg:col-span-7 ">
+            <div className="lg:w-[70%] text-slate-900 lg:p-9 p-3">
+              <p className="text-2xl capitalize font-semibold">corporate cards</p>
+              <p className="text-sm">Generate physical, single-use, and multi-use virtual multi-currency cards for your team to spend flexibly without needing cash.</p>
+            </div>
+            <img src="/cards.webp" alt="" className=""/>
 
-          <div className="relative -top-[75vh]">
-            {featureList.map((feature, index) => (
-              <FeatureSection key={index} feature={feature} sectionId={index} />
-            ))}
-          </div> */}
-          <div className="grid grid-cols-12 gap-10 max-w-6xl mx-auto">
-          <div className="p-2 rounded-lg col-span-12 lg:col-span-5">
-            <img src="/expense.webp" alt="" />
-            <div className="">
-              <p>expense management</p>
-              <p>Manage your company&#39;s expenses by organizing transactions, tracking vendors, and implementing spending policies.</p>
-            </div>
           </div>
-          <div className="p-2 rounded-lg lg:col-span-7 col-span-12">
-            <img src="/expense.webp" alt="" />
-            <div className="">
-              <p>expense management</p>
-              <p>Manage your company&#39;s expenses by organizing transactions, tracking vendors, and implementing spending policies.</p>
+          <div className="rounded-3xl overflow-hidden text-left bg-[#ebe8de]  lg:col-span-5 ">
+            <div className="w-[90%] lg:p-9 p-3 text-slate-900 p-4">
+              <p className="text-2xl capitalize font-semibold">expense management</p>
+              <p className="text-sm">Manage your company&#39;s expenses by organizing transactions, tracking vendors, and implementing spending policies.</p>
             </div>
+            <img src="/expense.webp" alt="" className=""/>
+
           </div>
+          <div className="rounded-3xl overflow-hidden text-left bg-[#fcfbfc]  lg:col-span-5 ">
+            <div className="w-[90%] lg:p-9 p-3 text-slate-900 p-4">
+              <p className="text-2xl capitalize font-semibold">cash accounts</p>
+              <p className="text-sm">Manage your primary bank account and sub-accounts to make payments, collect payments, and withdraw funds</p>
+            </div>
+            <img src="/account.webp" alt="" className=""/>
+
+          </div>
+          <div className="rounded-3xl flex flex-col justify-between overflow-hidden text-left bg-[#f2f5f1]  lg:col-span-7 ">
+            <div className="lg:w-[70%] text-slate-900 lg:p-9 p-3">
+              <p className="text-2xl capitalize font-semibold">bank payments</p>
+              <p className="text-sm">Manage your financial transactions, make single and batch payments, and set approval rules.</p>
+            </div>
+            <img src="/payment.webp" alt="" className=""/>
+
+          </div>
+           <div className="rounded-3xl flex flex-col justify-between overflow-hidden text-left bg-[#e9e9e7]  lg:col-span-7 ">
+            <div className="lg:w-[70%] text-slate-900 lg:p-9 p-3">
+              <p className="text-2xl capitalize font-semibold">reimbursements</p>
+              <p className="text-sm">Keep your employees happy by reimbursing them for out-of-pocket expenses in just a few clicks.</p>
+            </div>
+            <img src="/reimbursement.webp" alt="" className=""/>
+
+          </div>
+          <div className="rounded-3xl overflow-hidden text-left bg-[#ebe8de]  lg:col-span-5 ">
+            <div className="w-[90%] lg:p-9 p-3 text-slate-900 p-4">
+              <p className="text-2xl capitalize font-semibold">fund collection</p>
+              <p className="text-sm"> Secure payment gateway to collect payments from customers anywhere, anytime.</p>
+            </div>
+            <img src="/fund.webp" alt="" className=""/>
+
+          </div>
+          
+          <div className="rounded-3xl overflow-hidden text-left bg-[#f2f5f1]  lg:col-span-5 ">
+            <div className="w-[90%] lg:p-9 p-3 text-slate-900 p-4">
+              <p className="text-2xl capitalize font-semibold">bank sync</p>
+              <p className="text-sm">Connect your accounts, track your spending, and manage your budget from one easy-to-use dashboard.</p>
+            </div>
+            <img src="/sync.webp" alt="" className=""/>
+
+          </div>
+          <div className="rounded-3xl flex flex-col justify-between overflow-hidden text-left bg-[#d6e3e8]  lg:col-span-7 ">
+            <div className="lg:w-[70%] text-slate-900 lg:p-9 p-3">
+              <p className="text-2xl capitalize font-semibold">reports & insights</p>
+              <p className="text-sm">Track your business activities, analyze performance, optimize your operations, and ultimately succeed in achieving your goals.</p>
+            </div>
+            <img src="/report.webp" alt="" className=""/>
+
+          </div>
+         
         
           </div>
           </div>
