@@ -1,12 +1,12 @@
 export const Footer = () => {
   return (
-    <div className=" flex justify-between bg-[#D28B28] text-white p-12 gap-5 py-20 text-xs rounded-t-[3rem]">
+    <div className=" flex flex-wrap lg:justify-between bg-[#D28B28] text-white lg:p-12 p-5 lg:gap-5 gap-10 lg:py-20 py-10 text-xs lg:rounded-t-[3rem] rounded-t-[2rem]">
       <div className="flex flex-col text-sm gap-8 max-w-[250px]">
         <img src="/bujeti.svg" alt="" className="h-10 w-max" />
         <p>Plot 1B, Block 129, Jide Sawyerr Drive, Lekki Phase 1, Lagos.</p>
         <p>Talk to a product expert today, use our chat box,email us</p>
       </div>
-      <div className="flex flex-col gap-4 capitalize ">
+      <div className="flex flex-col gap-4 capitalize min-w-[150px]">
         <p className="text-base font-semibold">products</p>
         <div className="flex flex-col gap-3 ">
           <a
@@ -53,7 +53,7 @@ export const Footer = () => {
           </a>
         </div>
       </div>
-      <div className="flex flex-col gap-4 capitalize">
+      <div className="flex flex-col gap-4 capitalize min-w-[150px]">
         <p className="text-base font-semibold">solutions</p>
         <div className="flex flex-col gap-3 ">
           <a
@@ -112,7 +112,7 @@ export const Footer = () => {
           </a>
         </div>
       </div>{" "}
-      <div className="flex flex-col gap-4 capitalize">
+      <div className="flex flex-col gap-4 capitalize min-w-[150px]">
         <p className="text-base font-semibold">company</p>
         <div className="flex flex-col gap-3 ">
           <a
@@ -141,7 +141,7 @@ export const Footer = () => {
           </a>
         </div>
       </div>
-      <div className="flex flex-col gap-4 capitalize">
+      <div className="flex flex-col gap-4 capitalize min-w-[150px]">
         <p className="text-base font-semibold">resources</p>
         <div className="flex flex-col gap-3 ">
           <a
@@ -176,7 +176,7 @@ export const Footer = () => {
           </a>
         </div>
       </div>{" "}
-      <div className="flex flex-col gap-4 capitalize">
+      <div className="flex flex-col gap-4 capitalize min-w-[150px]">
         <p className="text-base font-semibold">using bujeti</p>
         <div className="flex flex-col gap-3 ">
           <a
