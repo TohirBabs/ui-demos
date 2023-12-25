@@ -2,7 +2,7 @@ export const Trial = () => {
   return (
     
     <div className="mx-auto w-[95%] text-[#D28B28] max-w-6xl  flex flex-col lg:flex-row justify-between  items-center">
-    <img src="/mobile.webp" alt="" />
+    <img src="/mobile.webp" alt="" className="w-[80%] lg:w-max" />
     <div className="flex max-w-2xl flex-col gap-5 p-5">
       <p className="lg:text-5xl text-3xl font-semibold lg:leading-[4rem] text-[#242628]">
         Ready to take control of your finances?
