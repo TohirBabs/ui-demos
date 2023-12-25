@@ -1,6 +1,7 @@
 import { useState } from "react";
 
 export const FAQ = () => {
+  const [open, setopen] = useState(-1);
 
   const faqs = [
     {
@@ -45,26 +46,21 @@ export const FAQ = () => {
     },
   ];
   const Question = ({ faq, index }) => {
-  const [open, setopen] = useState(false);
+    const [active, setactive] = useState(false);
 
     return (
-      <div
-        // style={{ height: open ? "180px" : "50px" }}
-        className=" flex-col flex gap-2  max-w-[390px] w-full h-full transition-all overflow-hidden "
+      <div      
+        className=" flex-col flex lg:text-lg text-sm w-full h-full p-3 rounded-xl border-b transition-all overflow-hidden "
       >
-      
-          <p className="text-lg">{faq.question}</p>
-         
-    
-
-        <p className="text-black text-sm p-4 rounded-xl bg-[#f8ede8]">{faq.answer}</p>
-     
+         <button onClick={() => open === index ? setopen(-1):setopen(index)} className="lg:text-lg text-sm flex justify-between text-left font-semibold">
+          <p>{faq.question}</p></button>
+        <p  style={{ height: open === index ? "100%" : "0px" }} className="text-black text-sm overflow-hidden pt-2 transition-all duration-500">{faq.answer}</p>    
       </div>
     );
   };
   return (
     <div className=" bg-white py-20">
-      <div className="mx-auto w-[95%] text-[#D28B28] max-w-7xl  flex flex-col justify-center gap-5  items-center">
+      <div className="mx-auto w-[98%] max-w-5xl text-black flex flex-col justify-center gap-5  items-center">
        
         <div className="flex gap-2 items-center rounded-full border border-slate-300 p-1 bg-white px-3">
         <svg
@@ -89,17 +85,17 @@ export const FAQ = () => {
           </svg>
             <p className="text-slate-900 text-xs lg:text-sm font-semibold">frequently asked questions</p>
           </div>
-          <h2 className="text-[1.7rem] lg:text-5xl  flex flex-col text-center w-full font-semibold lg:leading-[1.4]">
+          <h2 className="text-[1.7rem] lg:text-5xl  text-[#D28B28]   flex flex-col text-center w-full font-semibold lg:leading-[1.4]">
           Have any questions?
         </h2>
         <p className="lg:text-lg text-sm lg:w-[70%] max-w-3xl w-[88%] text-slate-900 text-center">
           Financial management is a universal challenge for businesses of all
-          sizes. 
-          Dive deeper into our FAQs to find solutions.
+          sizes. Dive deeper into our FAQs to find solutions.
         </p>
-        <div className="flex justify-center  gap-5 w-full flex-wrap">
+        <div className="flex justify-center gap-5 w-full max-w-2xl flex-col">
           {faqs.map((faq, index) => (
             <Question faq={faq} key={index} index={index} />
+
           ))}
         </div>
       </div>
