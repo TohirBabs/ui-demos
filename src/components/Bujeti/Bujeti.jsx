@@ -1,4 +1,3 @@
-import React from "react";
 import { Hero } from "./Hero";
 import Features from "./Features";
 import { Trial } from "./Trial";
@@ -10,16 +9,15 @@ import { Reason } from "./Reason";
 
 const Bujeti = () => {
   return (
-    <div className="font-poppins  bg-[#f7e8d4]">
+    <div className="font-dm  bg-[#f7e8d4]">
       <Header />
       <Hero />
       <Features />
-      <Integrations/>
-      <Reason/>
-      <FAQ/>
+      <Integrations />
+      <Reason />
+      <FAQ />
       <Trial />
-     
-      <Footer/>
+      <Footer />
     </div>
   );
 };
