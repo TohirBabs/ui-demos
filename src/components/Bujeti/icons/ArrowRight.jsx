@@ -10,7 +10,7 @@ const ArrowRightIcon = () => {
     >
       <path
         d="M5 12H19M19 12L12 5M19 12L12 19"
-        stroke="black"
+        stroke="#555"
         strokeWidth="2"
         strokeLinecap="round"
         strokeLinejoin="round"
