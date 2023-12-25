@@ -1,9 +1,6 @@
 import { useState } from "react";
-import { useRef } from "react";
-import { useEffect } from "react";
 
 const Features = () => {
-  const [visibleSection, setVisibleSection] = useState(0);
 
   const featureList = [
     {
@@ -56,54 +53,7 @@ const Features = () => {
     },
   ];
 
-  const FeatureSection = ({ feature, sectionId }) => {
-    const sectionRef = useRef(null);
 
-    useEffect(() => {
-      const observer = new IntersectionObserver(
-        ([entry]) => {
-          entry.isIntersecting && setVisibleSection(sectionId);
-        },
-        { rootMargin: "0px", threshold: 0.5 } // Adjust threshold as needed
-      );
-
-      if (sectionRef.current) {
-        observer.observe(sectionRef.current);
-      }
-
-      return () => {
-        if (sectionRef.current) {
-          observer.unobserve(sectionRef.current);
-        }
-      };
-    }, []);
-    console.log(visibleSection);
-
-    return (
-      <section
-        ref={sectionRef}
-        id={sectionId}
-        className="text-left w-[90vw]  h-[100vh] flex-col flex gap-10 py-20"
-      >
-        <h2 className="text-5xl capitalize max-w-xs  font-semibold leading-[1.3]">
-          {feature.title}
-        </h2>
-        <p className=" w-[35%] text-slate-900">{feature.body}</p>
-        <button className=" w-max  py-2 px-6 rounded-xl border-4 bg-gray-300/10 backdrop-blur-sm">
-          {feature.cta}
-        </button>
-      </section>
-    );
-  };
-  const SectionImage = () => {
-    return (
-      <img
-        src={featureList[visibleSection].image} // Change 'placeholder-image-url' to your placeholder image URL
-        alt="Section Image"
-        className="h-[70vh] w-full object-cover "
-      />
-    );
-  };
 
   return (
   
@@ -147,14 +97,14 @@ const Features = () => {
            <div className="rounded-3xl flex flex-col justify-between overflow-hidden text-left bg-[#e9e9e7]  lg:col-span-7 ">
             <div className="lg:w-[70%] text-slate-900 lg:p-9 p-3">
               <p className="text-2xl capitalize font-semibold">corporate cards</p>
-              <p className="text-sm">Generate physical, single-use, and multi-use virtual multi-currency cards for your team to spend flexibly without needing cash.</p>
+              <p className="text-sm py-1">Generate physical, single-use, and multi-use virtual multi-currency cards for your team to spend flexibly without needing cash.</p>
             </div>
             <img src="/cards.webp" alt="" className=""/>
           </div>
           <div className="rounded-3xl overflow-hidden text-left bg-[#ebe8de]  lg:col-span-5 ">
             <div className="w-[90%] lg:p-9 p-3 text-slate-900 p-4">
               <p className="text-2xl capitalize font-semibold">expense management</p>
-              <p className="text-sm">Manage your company&#39;s expenses by organizing transactions, tracking vendors, and implementing spending policies.</p>
+              <p className="text-sm py-1">Manage your company&#39;s expenses by organizing transactions, tracking vendors, and implementing spending policies.</p>
             </div>
             <img src="/expense.webp" alt="" className=""/>
 
@@ -162,7 +112,7 @@ const Features = () => {
           <div className="rounded-3xl overflow-hidden text-left bg-[#fcfbfc]  lg:col-span-5 ">
             <div className="w-[90%] lg:p-9 p-3 text-slate-900 p-4">
               <p className="text-2xl capitalize font-semibold">cash accounts</p>
-              <p className="text-sm">Manage your primary bank account and sub-accounts to make payments, collect payments, and withdraw funds</p>
+              <p className="text-sm py-1">Manage your primary bank account and sub-accounts to make payments, collect payments, and withdraw funds</p>
             </div>
             <img src="/account.webp" alt="" className=""/>
 
@@ -170,7 +120,7 @@ const Features = () => {
           <div className="rounded-3xl flex flex-col justify-between overflow-hidden text-left bg-[#f2f5f1]  lg:col-span-7 ">
             <div className="lg:w-[70%] text-slate-900 lg:p-9 p-3">
               <p className="text-2xl capitalize font-semibold">bank payments</p>
-              <p className="text-sm">Manage your financial transactions, make single and batch payments, and set approval rules.</p>
+              <p className="text-sm py-1">Manage your financial transactions, make single and batch payments, and set approval rules.</p>
             </div>
             <img src="/payment.webp" alt="" className=""/>
 
@@ -178,7 +128,7 @@ const Features = () => {
            <div className="rounded-3xl flex flex-col justify-between overflow-hidden text-left bg-[#e9e9e7]  lg:col-span-7 ">
             <div className="lg:w-[70%] text-slate-900 lg:p-9 p-3">
               <p className="text-2xl capitalize font-semibold">reimbursements</p>
-              <p className="text-sm">Keep your employees happy by reimbursing them for out-of-pocket expenses in just a few clicks.</p>
+              <p className="text-sm py-1">Keep your employees happy by reimbursing them for out-of-pocket expenses in just a few clicks.</p>
             </div>
             <img src="/reimbursement.webp" alt="" className=""/>
 
@@ -186,7 +136,7 @@ const Features = () => {
           <div className="rounded-3xl overflow-hidden text-left bg-[#f8ede8]  lg:col-span-5 ">
             <div className="w-[90%] lg:p-9 p-3 text-slate-900 p-4">
               <p className="text-2xl capitalize font-semibold">fund collection</p>
-              <p className="text-sm"> Secure payment gateway to collect payments from customers anywhere, anytime.</p>
+              <p className="text-sm py-1"> Secure payment gateway to collect payments from customers anywhere, anytime.</p>
             </div>
             <img src="/fund.webp" alt="" className=""/>
 
@@ -194,7 +144,7 @@ const Features = () => {
           <div className="rounded-3xl overflow-hidden text-left bg-[#f2f5f1]  lg:col-span-5 ">
             <div className="w-[90%] lg:p-9 p-3 text-slate-900 p-4">
               <p className="text-2xl capitalize font-semibold">bank sync</p>
-              <p className="text-sm">Connect your accounts, track your spending, and manage your budget from one easy-to-use dashboard.</p>
+              <p className="text-sm py-1">Connect your accounts, track your spending, and manage your budget from one easy-to-use dashboard.</p>
             </div>
             <img src="/sync.webp" alt="" className=""/>
 
@@ -202,7 +152,7 @@ const Features = () => {
           <div className="rounded-3xl flex flex-col justify-between overflow-hidden text-left bg-[#d6e3e8]  lg:col-span-7 ">
             <div className="lg:w-[70%] text-slate-900 lg:p-9 p-3">
               <p className="text-2xl capitalize font-semibold">reports & insights</p>
-              <p className="text-sm">Track your business activities, analyze performance, optimize your operations, and ultimately succeed in achieving your goals.</p>
+              <p className="text-sm py-1">Track your business activities, analyze performance, optimize your operations, and ultimately succeed in achieving your goals.</p>
             </div>
             <img src="/report.webp" alt="" className=""/>
 
