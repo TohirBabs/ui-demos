@@ -1,20 +1,13 @@
 export const Reason = () => {
   const forList = [{icon:  <svg
-    width="136"
-    height="136"
-    viewBox="0 0 136 136"
+    width="80"
+    height="80"
+    viewBox="0 0 120 120"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
   >
     <g filter="url(#filter0_d_9_36)">
-      <rect
-        x="4"
-        width="128"
-        height="128"
-        rx="24"
-        fill="#3C3C3C"
-        shapeRendering="crispEdges"
-      />
+     
       <rect
         x="41.25"
         y="36.5"
@@ -75,13 +68,13 @@ export const Reason = () => {
       </filter>
     </defs>
   </svg>,title:"for finance managers",text:" For Finance Managers Track costs with precision for financial control."},{icon:  <svg
-                width="128"
-                height="128"
-                viewBox="0 0 128 128"
+                width="80"
+                height="80"
+                viewBox="0 0 120 120"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
-                <rect width="128" height="128" rx="24" fill="#3C3C3C" />
+                {/* <rect width="128" height="128" rx="24" fill="#3C3C3C" /> */}
                 <path
                   fillRule="evenodd"
                   clipRule="evenodd"
@@ -89,13 +82,12 @@ export const Reason = () => {
                   fill="white"
                 />
               </svg>,title:"for Ceos",text:"Drive growth, increase profitability, and improve the bottom-line."}, {icon:            <svg
-                width="128"
-                height="128"
-                viewBox="0 0 128 128"
+                width="80"
+                height="80"
+                viewBox="0 0 120 120"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
-                <rect width="128" height="128" rx="24" fill="#3C3C3C" />
                 <mask id="path-2-inside-1_9_38" fill="white">
                   <path d="M93.5 65.5C95.7091 65.5 97.5236 67.2967 97.2717 69.4914C96.6393 75.0011 94.7037 80.302 91.6014 84.945C87.7556 90.7007 82.2893 95.1867 75.8939 97.8358C69.4985 100.485 62.4612 101.178 55.6718 99.8275C48.8825 98.477 42.6461 95.1436 37.7513 90.2487C32.8564 85.3539 29.523 79.1175 28.1725 72.3282C26.822 65.5388 27.5151 58.5015 30.1642 52.1061C32.8133 45.7107 37.2993 40.2444 43.055 36.3986C47.698 33.2963 52.9989 31.3608 58.5086 30.7283C60.7033 30.4764 62.5 32.2909 62.5 34.5V61.5C62.5 63.7091 64.2909 65.5 66.5 65.5H93.5Z" />
                 </mask>
@@ -116,13 +108,13 @@ export const Reason = () => {
                   mask="url(#path-3-inside-2_9_38)"
                 />
               </svg>,title:"for accountants",text:"  Make tasks easier and reports clearer with our expense management software."},{icon: <svg
-                width="128"
-                height="128"
-                viewBox="0 0 128 128"
+                width="80"
+                height="80"
+                viewBox="0 0 120 120"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
-                <rect width="128" height="128" rx="24" fill="#3C3C3C" />
+                {/* <rect width="128" height="128" rx="24" fill="#3C3C3C" /> */}
                 <rect
                   x="54"
                   y="66"
@@ -149,13 +141,12 @@ export const Reason = () => {
                 />
               </svg>
 ,title:"for employees",text:" Simplified expenses to enjoy faster reimbursements."},{icon:       <svg
-  width="128"
-  height="128"
+  width="80"
+  height="80"
   viewBox="0 0 128 128"
   fill="none"
   xmlns="http://www.w3.org/2000/svg"
 >
-  <rect width="128" height="128" rx="24" fill="#3C3C3C" />
   <rect
     x="29"
     y="44.5"
@@ -223,13 +214,12 @@ export const Reason = () => {
     fill="#3C3C3C"
   />
 </svg>, title:"for team managers",text:"   Allocate resources to your team members and stay on budget."},{icon:<svg
-                width="128"
-                height="128"
-                viewBox="0 0 128 128"
+                width="80"
+                height="80"
+                viewBox="0 0 120 120"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
-                <rect width="128" height="128" rx="24" fill="#3C3C3C" />
                 <line
                   x1="41"
                   y1="85.7574"
@@ -245,7 +235,7 @@ export const Reason = () => {
 
 
   const ForCards = ({card}) => {
-    return ( <div className=" flex max-w-[350px]  items-center lg:gap-4 gap-2">
+    return ( <div className=" flex max-w-[350px] justify-between items-center lg:gap-4 gap-2">
     {/* <div className="w-10 h-10 overflow-hidden"> */}
     {card.icon}
     {/* </div> */}
@@ -263,7 +253,7 @@ export const Reason = () => {
 
   return (
     <div className=" bg-[#1C1917] ">
-      <div className="flex flex-col  max-w-6xl mx-auto lg:flex-row justify-center lg:gap-5 gap-4 lg:py-20 p-4 text-white items-center">
+      <div className="flex flex-col  max-w-6xl mx-auto lg:flex-row justify-center lg:gap-5 gap-4 lg:py-20 p-4 py-10 text-white items-center">
         <div className=" flex flex-col gap-5">
         <div className="flex w-max gap-2 items-center rounded-full border border-slate-300 p-1 bg-white px-3">
       <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -280,7 +270,7 @@ export const Reason = () => {
         </p>
         </div>
      
-        <div className="flex flex-wrap  rounded-xl lg:max-w-3xl justify-center my-3  ">
+        <div className="flex flex-wrap  rounded-xl lg:max-w-3xl  my-3 gap-10 ">
           {forList.map((list, index) => <ForCards key={index} card={list}/>)}
    
         </div>
