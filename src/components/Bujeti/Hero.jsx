@@ -39,13 +39,13 @@ export const Hero = () => {
   };
 
   return (
-    <div className="mx-auto w-full lg:border-x  border-slate-300 text-center text-[#D28B28] max-w-6xl  flex flex-col  items-center">
+    <div className="mx-auto w-full lg:border-x  border-slate-300 text-left  lg:text-center text-[#D28B28] max-w-6xl  flex flex-col  items-center">
       <div className="flex flex-col items-center gap-5 max-w-5xl w-full lg:border-x border-slate-300 py-8 lg:py-20">
         <h2 className="lg:text-[3.6rem] text-[2.8rem] font-poppins  font-semibold leading-[1.4] w-full ">
-          <div className="lg:border-b border-slate-300">
+          <div className="lg:border-b border-slate-300 px-3">
             Financial management
           </div>
-          <div className="border-b border-slate-300">
+          <div className="border-b border-slate-300 px-3">
             for your African business
           </div>
         </h2>
