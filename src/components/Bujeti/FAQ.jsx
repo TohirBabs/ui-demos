@@ -52,7 +52,8 @@ export const FAQ = () => {
       <div      
         className=" flex-col flex lg:text-lg text-sm w-full h-full p-3 rounded-xl border-b transition-all overflow-hidden "
       >
-         <button onClick={() => open === index ? setopen(-1):setopen(index)} className="lg:text-lg text-sm text-left font-semibold">{faq.question}</button>
+         <button onClick={() => open === index ? setopen(-1):setopen(index)} className="lg:text-lg text-sm flex justify-between text-left font-semibold">
+          <p>{faq.question}</p></button>
         <p  style={{ height: open === index ? "100%" : "0px" }} className="text-black text-sm overflow-hidden pt-2 transition-all duration-500">{faq.answer}</p>    
       </div>
     );
@@ -89,12 +90,12 @@ export const FAQ = () => {
         </h2>
         <p className="lg:text-lg text-sm lg:w-[70%] max-w-3xl w-[88%] text-slate-900 text-center">
           Financial management is a universal challenge for businesses of all
-          sizes.
-          Dive deeper into our FAQs to find solutions.
+          sizes. Dive deeper into our FAQs to find solutions.
         </p>
         <div className="flex justify-center gap-5 w-full max-w-2xl flex-col">
           {faqs.map((faq, index) => (
             <Question faq={faq} key={index} index={index} />
+
           ))}
         </div>
       </div>

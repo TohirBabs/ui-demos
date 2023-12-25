@@ -111,7 +111,7 @@ export const Footer = () => {
             for non-profit
           </a>
         </div>
-      </div>{" "}
+      </div>
       <div className="flex flex-col gap-4 capitalize min-w-[150px]">
         <p className="text-base font-semibold">company</p>
         <div className="flex flex-col gap-3 ">
@@ -175,7 +175,7 @@ export const Footer = () => {
             privacy policy
           </a>
         </div>
-      </div>{" "}
+      </div>
       <div className="flex flex-col gap-4 capitalize min-w-[150px]">
         <p className="text-base font-semibold">using bujeti</p>
         <div className="flex flex-col gap-3 ">

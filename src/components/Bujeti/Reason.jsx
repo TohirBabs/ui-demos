@@ -235,10 +235,9 @@ export const Reason = () => {
 
 
   const ForCards = ({card}) => {
-    return ( <div className=" flex max-w-[350px] justify-between items-center lg:gap-4 gap-2">
-    {/* <div className="w-10 h-10 overflow-hidden"> */}
+    return ( 
+    <div className=" flex max-w-[350px] justify-between items-center lg:gap-4 gap-2">
     {card.icon}
-    {/* </div> */}
     <div className="">
     <p className="text-[#bfff0b] text-xl font-bold capitalize">
      {card.title}
@@ -249,7 +248,6 @@ export const Reason = () => {
     </div>
    
   </div>)}
-
 
   return (
     <div className=" bg-[#1C1917] ">
