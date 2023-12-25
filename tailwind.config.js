@@ -3,7 +3,11 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
-      fontFamily: { poppins: ["Poppins"], dm: ["DM Sans"] },
+      fontFamily: {
+        poppins: ["Poppins"],
+        dm: ["DM Sans"],
+        open: ["Open Sans"],
+      },
       transitionProperty: {
         width: "width",
       },
