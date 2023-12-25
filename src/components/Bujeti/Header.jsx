@@ -4,6 +4,7 @@ import ArrowRightIcon from "./icons/ArrowRight";
 
 export const Header = () => {
   const [navOpen, setNavOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(-1);
 
   const navDetails = [
     {
@@ -77,21 +78,20 @@ export const Header = () => {
     },
   ];
 
-  const NavMenu = ({ nav }) => {
-    const [menuOpen, setMenuOpen] = useState(false);
-
+  const NavMenu = ({ nav, index }) => {
+    console.log(menuOpen === index);
     return (
       <button className="group lg:py-6 ">
         <div
-          onClick={() => setMenuOpen(!menuOpen)}
-          className="flex justify-between p-3"
+          onClick={() => setMenuOpen(index)}
+          className="flex justify-between p-3 overflow-hidden lg:overflow-visible"
         >
           <p className="capitalize text-lg"> {nav.title}</p> <ChevronDownIcon />
         </div>
         <div
           className={`lg:w-[72rem] text-left lg:items-center justify-center
-           h-${menuOpen ? "max" : "0"}
-         h-0  lg:gap-5 gap-2 lg:absolute lg:top-[100%] overflow-hidden lg:left-[50%] lg:-translate-x-[50%] lg:group-hover:h-[450px] transition-all  bg-white backdrop-blur flex flex-col lg:flex-row`}
+           h-${menuOpen === index ? "max" : "0"}
+         lg:gap-5 gap-2 lg:absolute lg:top-[100%] overflow-hidden lg:left-[50%] lg:-translate-x-[50%] lg:group-hover:h-[450px] transition-all  bg-white backdrop-blur flex flex-col lg:flex-row`}
         >
           <div className="flex flex-col bg-slate-100 h-full justify-center lg:gap-10 gap-2 lg:px-20 p-4 max-w-[500px]">
             <p className="lg:text-5xl text-2xl font-semibold ">{nav.title}</p>
@@ -108,25 +108,27 @@ export const Header = () => {
               </a>
             )}
           </div>
-          {nav.links?.map((links, index) => (
-            <div
-              key={index}
-              className=" flex flex-1 flex-col h-max lg:gap-6 gap-2 lg:p-4 px-3"
-            >
-              <p className="text-lg capitalize">{links.title}</p>
-              <div className="flex flex-col  flex-wrap lg:gap-4 gap-2 text-sm   ">
-                {links.list.map((link, index) => (
-                  <a
-                    key={index}
-                    href="/startups"
-                    className="text-slate-600 capitalize font-semibold hover:text-black"
-                  >
-                    {link} <ArrowRightIcon />
-                  </a>
-                ))}
+          <div className="flex w-full">
+            {nav.links?.map((links, index) => (
+              <div
+                key={index}
+                className=" flex flex-1 flex-col h-max lg:gap-6 gap-2 lg:p-4 px-3"
+              >
+                <p className="text-lg capitalize">{links.title}</p>
+                <div className="flex flex-col  flex-wrap lg:gap-4 gap-2 text-sm   ">
+                  {links.list.map((link, index) => (
+                    <a
+                      key={index}
+                      href="/startups"
+                      className="text-slate-600 capitalize group font-semibold hover:text-black"
+                    >
+                      {link} <ArrowRightIcon />
+                    </a>
+                  ))}
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </button>
     );
@@ -134,14 +136,12 @@ export const Header = () => {
 
   return (
     <div
-      className={`mx-auto w-full max-w-6xl  border-slate-300 sticky top-0  lg:overflow-visible z-10  lg:p-0  bg-${
+      className={`mx-auto w-full max-w-6xl  border-slate-300 sticky top-0 overflow-hidden  lg:overflow-visible z-10  lg:p-0  bg-${
         navOpen ? "white" : "[#f7e8d4]/50"
       }`}
     >
       <div
-        className={`border-b border-x overflow-${
-          navOpen ? "scroll" : "hidden"
-        }  border-[#d28b28]/500 mx-auto border-slate-300 w-full  backdrop-blur lg:px-8 py-3 lg:py-0 text-black max-w-5xl flex flex-col lg:flex-row lg:justify-between h-${
+        className={`border-b border-x  border-[#d28b28]/500 mx-auto border-slate-300 w-full  backdrop-blur lg:px-8 py-3 lg:py-0 text-black max-w-5xl flex flex-col lg:flex-row lg:justify-between h-${
           navOpen ? "screen" : "16"
         }  transition-all  lg:h-max lg:items-center gap-5`}
       >
@@ -162,7 +162,7 @@ export const Header = () => {
         </div>
         <nav className="flex  lg:p-0 flex-col lg:flex-row lg:h-full lg:gap-8 gap-5 text-md">
           {navDetails.map((nav, index) => (
-            <NavMenu key={index} nav={nav} />
+            <NavMenu key={index} nav={nav} index={index} />
             // <>link</>
           ))}
         </nav>
