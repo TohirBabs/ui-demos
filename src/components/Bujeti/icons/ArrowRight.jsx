@@ -1,4 +1,4 @@
-const ArrowRightIcon = () => {
+const ArrowRightIcon = ({ color }) => {
   return (
     <svg
       className="inline "
@@ -10,7 +10,7 @@ const ArrowRightIcon = () => {
     >
       <path
         d="M5 12H19M19 12L12 5M19 12L12 19"
-        stroke="#555"
+        stroke={color || "#555"}
         strokeWidth="2"
         strokeLinecap="round"
         strokeLinejoin="round"
