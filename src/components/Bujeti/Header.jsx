@@ -79,16 +79,18 @@ export const Header = () => {
   ];
 
   const NavMenu = ({ nav, index }) => {
-    console.log(menuOpen === index);
     return (
-      <button className="group lg:py-6 ">
+      <button className="group lg:py-3 ">
         <div
-          onClick={() => setMenuOpen(index)}
-          className="flex justify-between p-3 overflow-hidden lg:overflow-visible"
+          onClick={() =>
+            menuOpen === index ? setMenuOpen(-1) : setMenuOpen(index)
+          }
+          className="flex justify-between p-3 items-center overflow-hidden lg:overflow-visible"
         >
           <p className="capitalize text-lg"> {nav.title}</p> <ChevronDownIcon />
         </div>
         <div
+          // style={{ height: `${menuOpen === index ? "max-height" : "0"}` }}
           className={`lg:w-[72rem] text-left lg:items-center justify-center
            h-${menuOpen === index ? "max" : "0"}
          lg:gap-5 gap-2 lg:absolute lg:top-[100%] overflow-hidden lg:left-[50%] lg:-translate-x-[50%] lg:group-hover:h-[450px] transition-all  bg-white backdrop-blur flex flex-col lg:flex-row`}
