@@ -48,7 +48,7 @@ export const Reason = () => {
 
   const ForCards = ({ card }) => {
     return (
-      <div className=" flex flex-col max-w-[320px] w-full bg-white/20 cursor-pointer  rounded-lg p-4 pr-8  lg:gap-3 gap-2">
+      <div className=" flex flex-col lg:max-w-[320px] w-full bg-white/20 cursor-pointer  rounded-lg p-4 pr-8  lg:gap-3 gap-2">
         <div className="flex gap-3 items-center">
           {card.icon}
           <p className="text-[#bfff0b] text-lg font-bold capitalize">
@@ -62,7 +62,7 @@ export const Reason = () => {
   };
 
   return (
-    <div className="flex flex-col bg-[#1C1917] max-w-6xl mx-auto lg:flex-row  lg:gap-10 gap-4 lg:py-10 p-10 text-white justify-between items-center">
+    <div className="flex flex-col bg-[#1C1917] max-w-6xl mx-auto lg:flex-row  lg:gap-10 gap-4 lg:py-10 p-6 text-white justify-between items-center">
       <div className=" flex lg:w-[380px] flex-col gap-5">
         <div className="flex w-max gap-2 items-center rounded-full border border-slate-300 p-1  px-3">
           <svg
