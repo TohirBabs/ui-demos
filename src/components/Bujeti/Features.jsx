@@ -1,3 +1,4 @@
+import ArrowRightIcon from "./icons/ArrowRight";
 import FeaturesIcon from "./icons/Features";
 
 const Features = () => {
@@ -99,12 +100,18 @@ const Features = () => {
               <div
                 className={`lg:w-[${
                   [0, 3, 4, 7].includes(index) ? "70%" : "90%"
-                }] text-slate-900 lg:p-9 p-3`}
+                }] text-slate-900 lg:p-9 p-3 flex flex-col gap-3`}
               >
                 <p className="text-2xl capitalize font-semibold">
                   {feature.title}
                 </p>
                 <p className="text-sm py-1">{feature.body}</p>
+                <a
+                  href="/startups"
+                  className="text-[#D28B28] capitalize font-semibold hover:text-black"
+                >
+                  {feature.cta} <ArrowRightIcon color="#D28B28" />
+                </a>
               </div>
               <img src={feature.image} alt="" className="" />
             </div>
