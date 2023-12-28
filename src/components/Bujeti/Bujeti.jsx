@@ -6,6 +6,7 @@ import { Integrations } from "./Integrations";
 import { FAQ } from "./FAQ";
 import { Footer } from "./Footer";
 import { Reason } from "./Reason";
+import { UseCases } from "./UseCases";
 
 const Bujeti = () => {
   return (
@@ -14,6 +15,7 @@ const Bujeti = () => {
       <Hero />
       <Features />
       <Integrations />
+      <UseCases />
       <Reason />
       <FAQ />
       <Trial />
