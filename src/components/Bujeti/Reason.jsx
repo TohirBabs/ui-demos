@@ -48,7 +48,7 @@ export const Reason = () => {
 
   const ForCards = ({ card }) => {
     return (
-      <div className=" flex flex-col lg:max-w-[320px] w-full bg-white/20 cursor-pointer  rounded-lg p-4 pr-8  lg:gap-3 gap-2">
+      <div className=" flex flex-col lg:w-[320px] w-full bg-white/20 cursor-pointer  rounded-lg p-4 pr-8  lg:gap-3 gap-2">
         <div className="flex gap-3 items-center">
           {card.icon}
           <p className="text-[#bfff0b] text-lg font-bold capitalize">
