@@ -138,7 +138,7 @@ export const Header = () => {
 
   return (
     <div
-      className={`mx-auto w-full max-w-6xl  border-slate-300 sticky top-0 overflow-hidden  lg:overflow-visible z-10  lg:p-0  bg-${
+      className={`mx-auto w-full max-w-6xl  border-slate-300 sticky top-0 overflow-hidden  lg:overflow-visible z-20  lg:p-0  bg-${
         navOpen ? "white" : "[#f7e8d4]/50"
       }`}
     >
