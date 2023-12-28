@@ -112,7 +112,7 @@ export const UseCases = () => {
   };
 
   return (
-    <div className="relative overflow-hidden  max-w-6xl h-[80vh] mx-auto bg-black  lg:gap-10 p-6 gap-4 lg:py-10  text-white ">
+    <div className="relative overflow-hidden  max-w-6xl h-[90vh] mx-auto bg-black  lg:gap-10 p-6 gap-4 lg:py-10  text-white ">
       <div className=" flex z-10 relative  flex-col  items-center lg:gap-32 gap-[30vh] ">
         <div className="">
           <div className="flex w-max gap-2 items-center mx-auto rounded-full border border-slate-300 p-1  px-3">
