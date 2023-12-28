@@ -72,7 +72,7 @@ export const UseCases = () => {
         <img
           src={usecase.img}
           alt={`Image ${index + 1}`}
-          className=" h-full lg:w-[72rem] opacity-30  object-cover"
+          className=" h-full lg:w-[72rem] w-full opacity-30  object-cover"
         />
       </div>
     ));
