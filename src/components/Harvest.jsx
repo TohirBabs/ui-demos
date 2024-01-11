@@ -7,6 +7,7 @@ const Harvest = () => {
         <p className="relative left-[22%] max-w-[60%] p-2">At HarvestGrove, we are passionate about agriculture and committed to providing the highest quality produce and services to our customers. With a legacy of farming excellence spanning 10 years, </p>
         <img src="/customers.jpg" alt="" className="relative left-[45%] pt-14"/>
         </div>
+        <img src="/grovecard.jpg" alt="" className="absolute rounded-2xl top-[30%] left-[2%]" />
         </div>
     </div>)
 }
